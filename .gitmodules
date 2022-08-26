@@ -1,0 +1,3 @@
+[submodule "Assets/Packages/GenericDatabase"]
+	path = Assets/Packages/GenericDatabase
+	url = https://github.com/nobnak/GenericDatabase.git
