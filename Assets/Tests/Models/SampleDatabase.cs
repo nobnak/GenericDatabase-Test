@@ -27,12 +27,12 @@ public struct IntKey : IEquatable<IntKey>, IComparable<IntKey> {
     #endregion
 }
 
-public class TextureResource : BaseRow<SampleDatabase, TextureTable, TextureResource> {
-    public TextureResource(SampleDatabase db, TextureTable table, int key) : base(db, table, key) {
+public class TextureResource : BaseRow<SampleDatabase, TextureTable, TextureResource, IntKey> {
+    public TextureResource(SampleDatabase db, TextureTable table, IntKey key) : base(db, table, key) {
     }
 }
 
-public class TextureTable : DictionaryTable<SampleDatabase, TextureTable, TextureResource> {
+public class TextureTable : DictionaryTable<SampleDatabase, TextureTable, TextureResource, IntKey> {
     public TextureTable(SampleDatabase db) : base(db) {
     }
 }
